@@ -137,7 +137,7 @@ class Session(object):
         address = self.get_address(address)
         return Connection(address, cert, self, use_cache=False)
 
-    def get_connection(self, address="push_sanbox", certificate=None, **cert_params):
+    def get_connection(self, address="push_sandbox", certificate=None, **cert_params):
         """ Obtain cached connection to APNs.
 
             Session caches connection descriptors, that remain open after use.
@@ -147,7 +147,7 @@ class Session(object):
             You can provide APNs address as ``(hostname, port)`` tuple or as
             one of the strings:
 
-                - push_sanbox -- ``("gateway.sandbox.push.apple.com", 2195)``, the default.
+                - push_sandbox -- ``("gateway.sandbox.push.apple.com", 2195)``, the default.
                 - push_production -- ``("gateway.push.apple.com", 2195)``
                 - feedback_sandbox -- ``("feedback.sandbox.push.apple.com", 2196)``
                 - feedback_production -- ``("feedback.push.apple.com", 2196)``
